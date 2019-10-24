@@ -38,6 +38,10 @@ box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
   padding: 0px;
 }
 
+body {
+  background-image: url(../images/background.jpg);
+}
+
 h1{
   font-size: 37px;
   font-family: almaq-rough, sans-serif;
@@ -60,5 +64,9 @@ h2{
 .warrior img{
   width: 190px;
   height: 190px;
+  @extend %center;
+}
+
+#logo {
   @extend %center;
 }
