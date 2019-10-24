@@ -40,6 +40,8 @@ box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
 
 body {
   background-image: url(../images/background.jpg);
+  background-position: center;
+  background-size: cover;  
 }
 
 h1{
@@ -69,4 +71,15 @@ h2{
 
 #logo {
   @extend %center;
+}
+
+.splash-l {
+  position: absolute;
+  left: 0px;
+  height: 60vh;
+}
+.splash-r {
+  position: absolute;
+  right: 0px;
+  height: 60vh;
 }
