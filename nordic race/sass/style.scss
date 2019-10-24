@@ -4,5 +4,43 @@ body{
 }
 
 h1 {
-  color: orange; 
+  color: orange;
 }
+
+
+/*---------------My variables*---------------*/
+$main-color: #E4E4E4;
+$site-color: #273238;
+$redish: #EF4658;
+$small-nav: #bfbfbf;
+/*---------------My variables*---------------*/
+
+/*---------------My Inheritances-------------*/
+%main-text {
+  font-family: malgun gothic, sans-serif;
+  font-size: 25px;
+}
+
+%center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+%header {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+%shadow {
+  -webkit-box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
+-moz-box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
+box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
+}
+
+/*---------------My Inheritances-------------*/ 
