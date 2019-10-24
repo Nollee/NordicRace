@@ -1,37 +1,12 @@
-*{
-  margin: auto;
-  padding: 0px;
-}
-
-h1 {
-  color: orange;
-}
-
-header{
-  margin: auto;
-}
-
-h2{ 
-  font-family: almaq-rough, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  color: #CEF249;
-  font-size: 50px;
-}
-
-
 /*---------------My variables*---------------*/
 $main-color: #E4E4E4;
 $site-color: #273238;
 $redish: #EF4658;
 $small-nav: #bfbfbf;
+$h-color: #CEF249;
 /*---------------My variables*---------------*/
 
 /*---------------My Inheritances-------------*/
-%main-text {
-  font-family: malgun gothic, sans-serif;
-  font-size: 25px;
-}
 
 %center {
   display: flex;
@@ -56,3 +31,34 @@ box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
 }
 
 /*---------------My Inheritances-------------*/
+
+
+*{
+  margin: auto;
+  padding: 0px;
+}
+
+h1{
+  font-size: 37px;
+  font-family: almaq-rough, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $h-color;
+    @extend %center;
+}
+
+h2{
+  font-family: almaq-rough, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: $h-color;
+  font-size: 50px;
+  @extend %center;
+
+}
+
+.warrior img{
+  width: 190px;
+  height: 190px;
+  @extend %center;
+}
