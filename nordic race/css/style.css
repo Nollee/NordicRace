@@ -1,27 +1,5 @@
 /* CSS til forside */
 
-body {
+* {
   margin: 0px;
-  padding: 0px; 
-}
-
-h1{
-  color: red;
-  font-size: 25px;
-}
-
-h2{
-  color: blue;
-}
-
-.mfj {
-  width: 500px;
-  height: 500px;
-  color: orange;
-  h3{
-    color: grey;
-}
-
-h3{
-  color: grey;
-}
+  padding: 0px;
