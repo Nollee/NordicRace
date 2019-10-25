@@ -1,9 +1,7 @@
 /*---------------My variables*---------------*/
-$main-color: #E4E4E4;
-$site-color: #273238;
 $red: #BF1B24;
 $btn-red: #480000;
-$small-nav: #bfbfbf;
+$white: #E4E4E4;
 $h-color: #CEF249;
 /*---------------My variables*---------------*/
 
@@ -15,7 +13,7 @@ $h-color: #CEF249;
   justify-content: center;
 }
 
-%header {
+%header { 
   height: 120px;
   width: 100%;
   display: flex;
@@ -69,7 +67,7 @@ h2{
 
 
 .warrior{
-  width: 100%; 
+  width: 100%;
 }
 
 
@@ -111,6 +109,7 @@ h2{
   position: absolute;
   bottom: 0px;
   max-height: 40%;
+  z-index: -1;
 }
 
 a {
@@ -134,8 +133,15 @@ a {
 
 #soilder-big {
   @extend %center;
-  width: 50%;
+  width: 100%;
   height: auto;
-  margin-top: 10px;
+  svg {
+    width: 60%;
+  }
+}
 
+.chartext {
+  width: 70%;
+  background-color: $white;
+  z-index: 3;
 }
