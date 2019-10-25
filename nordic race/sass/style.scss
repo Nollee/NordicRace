@@ -85,6 +85,11 @@ h2{
   @extend %center;
 }
 
+#logo-small {
+  @extend %center;
+  width: 30%;
+}
+
 .splash-l {
   z-index: -2;
   position: absolute;
@@ -100,16 +105,17 @@ h2{
   overflow-x: hidden;
 }
 
-#dirt-small {
+#dirt-small, #dirt-big {
   width: 100%;
   position: absolute;
   bottom: 0px;
+  max-height: 40%;
 }
 
-a { 
+a {
   text-decoration: none;
 }
-
+ 
 .button {
   @extend %center;
   border: none;
