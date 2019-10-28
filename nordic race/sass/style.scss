@@ -156,3 +156,42 @@ a {
 margin-top: -20px;
 @extend %shadow;
 }
+
+.score{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: #c22a1f 25px solid;
+  background-color: white;
+  margin-top: 40px;
+
+}
+
+#player{
+  position: absolute;
+  width: 80%;
+  height: auto;
+  @extend %center;
+  left: 10%;
+  right: 10%;
+  bottom: 200px;
+  z-index: 5;
+}
+
+.buttons{
+  margin: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  bottom: 50px;
+  z-index: 4;
+}
+.up, .down{
+border-radius: 50%;
+background-color: white;
+border: #1BBF44 8px solid;
+width: 60px;
+height: 60px;
+}
