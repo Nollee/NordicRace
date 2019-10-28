@@ -48,9 +48,9 @@ a { text-decoration: none; }
 
 .score { color: #222625; font-size: 100px; font-family: almaq-rough, sans-serif; background-repeat: no-repeat; background-position: center; width: 170px; height: 170px; border-radius: 50%; border: #BF1B24 15px solid; background-color: white; margin-top: 40px; }
 
-#player { position: absolute; width: 80%; height: auto; left: 10%; right: 10%; bottom: 200px; z-index: 5; }
+#player { position: absolute; width: 80%; height: auto; left: 10%; right: 10%; bottom: 26%; z-index: 5; }
 
-.buttons { margin: auto; position: absolute; display: flex; flex-direction: row; justify-content: space-between; width: 100%; bottom: 50px; z-index: 4; }
+.arrows { margin: auto; position: absolute; display: flex; flex-direction: row; justify-content: space-between; width: 100%; bottom: 50px; z-index: 4; }
 
 .up, .down { border-radius: 50%; background-image: url(../images/mud-small.png); background-color: white; border: #1BBF44 8px solid; width: 60px; height: 60px; }
 
@@ -60,4 +60,8 @@ a { text-decoration: none; }
 
 .down img { transform: rotate(-90deg); }
 
-.popup { DISPLAY: NONE; position: absolute; z-index: 15; background-color: rgba(0, 0, 0, 0.7); height: 100%; width: 100%; transition: 4s; }
+.popup { opacity: 100%; position: absolute; z-index: 15; background-color: rgba(0, 0, 0, 0.7); height: 100%; width: 100%; transition: 2s; padding-top: 20px; }
+
+.popup.hide { opacity: 0%; transition: 1s; }
+
+#button-del { width: 50%; margin-top: -10px; }
