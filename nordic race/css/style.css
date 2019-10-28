@@ -1,12 +1,12 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-h1, h2, .warrior img, #logo, #logo-small, .button, #soilder-big, #player { display: flex; align-items: center; justify-content: center; }
+h1, h2, .warrior img, #logo, #logo-small, .button, .soilder-text-wrapper, #soilder-big, #player { display: flex; align-items: center; justify-content: center; }
 
 /*---------------My Inheritances-------------*/
 * { margin: auto; padding: 0px; }
 
-body { background-image: url(../images/background_3.jpg); background-position: center; height: 100vh; width: 100vw; overflow: hidden; position: relative; }
+body { background-image: url(../images/background_3.jpg); background-position: center; height: 100vh; width: 100vw; overflow: hidden; position: relative; font-family: "Segoe UI"; }
 
 h1 { font-size: 37px; font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal; color: #CEF249; }
 
@@ -22,13 +22,21 @@ h2 { font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal;
 
 .splash-r { position: fixed; right: 0px; height: 60vh; width: auto; z-index: -4; overflow-x: hidden; }
 
-#dirt-small, #dirt-big { width: 100%; position: absolute; bottom: 0px; max-height: 40%; }
+#dirt-small, #dirt-big { width: 100%; position: absolute; bottom: 0px; max-height: 40%; z-index: -1; }
 
 a { text-decoration: none; }
 
 .button { border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); margin-top: 10%; width: 50%; height: 50px; border-radius: 30px; z-index: 5; font-size: 30px; color: #480000; font-family: almaq-rough, sans-serif; }
 
-#soilder-big { width: 50%; height: auto; margin-top: 10px; }
+.soilder-text-wrapper { position: relative; flex-direction: column; }
+
+#soilder-big { width: 100%; z-index: 5; }
+
+#soilder-big svg { width: 60%; height: auto; }
+
+.chartext { width: 80%; background-color: #E4E4E4; z-index: 2; position: absolute; }
+
+.chartext p { padding: 15px; }
 
 .score { width: 180px; height: 180px; border-radius: 50%; border: #c22a1f 25px solid; background-color: white; margin-top: 40px; }
 
