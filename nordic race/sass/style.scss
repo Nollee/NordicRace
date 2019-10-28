@@ -75,7 +75,7 @@ h2{
 }
 
 #logo-small {
-  margin-top: 10px;
+  padding-top: 10px;
   @extend %center;
   width: 30%;
 }
@@ -146,14 +146,14 @@ a {
   padding: 15px;
   }
 position: absolute;
- 
+
 }
 
 .score{
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: #c22a1f 25px solid;
+  border: $red 25px solid;
   background-color: white;
   margin-top: 40px;
 
@@ -186,4 +186,29 @@ background-color: white;
 border: #1BBF44 8px solid;
 width: 60px;
 height: 60px;
+}
+
+.buttons img{
+  width: 90%;
+  height: auto;
+  @extend %center;
+  flex-direction: column;
+  margin-top: 2px;
+}
+
+.up img{
+    transform: rotate(90deg);
+}
+
+.down img{
+    transform: rotate(-90deg);
+}
+
+.popup{
+  position: absolute;
+  z-index: 15;
+  background-color: rgba(0,0,0,0.7);
+  height: 100%;
+  width: 100%;
+  transition: 4s;
 }
