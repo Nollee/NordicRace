@@ -3,6 +3,7 @@ $red: #BF1B24;
 $btn-red: #480000;
 $white: #E4E4E4;
 $h-color: #CEF249;
+$dark: #222625;
 /*---------------My variables*---------------*/
 
 /*---------------My Inheritances-------------*/
@@ -152,18 +153,24 @@ a {
   p {
   font-size: 15px;
   padding: 15px;
-  }  
+  }
 margin-top: -20px;
 @extend %shadow;
 }
 
 .score{
-  width: 180px;
-  height: 180px;
+  color: $dark;
+  font-size: 100px;
+  font-family: almaq-rough, sans-serif;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 170px;
+  height: 170px;
   border-radius: 50%;
-  border: $red 25px solid;
+  border: $red 15px solid;
   background-color: white;
   margin-top: 40px;
+  @extend %center;
 
 }
 
@@ -190,18 +197,19 @@ margin-top: -20px;
 }
 .up, .down{
 border-radius: 50%;
+background-image: url(../images/mud-small.png);
 background-color: white;
 border: #1BBF44 8px solid;
 width: 60px;
 height: 60px;
+  @extend %center;
 }
 
 .buttons img{
-  width: 90%;
+  width: 70%;
   height: auto;
-  @extend %center;
+
   flex-direction: column;
-  margin-top: 2px;
 }
 
 .up img{
@@ -213,6 +221,7 @@ height: 60px;
 }
 
 .popup{
+  DISPLAY: NONE;
   position: absolute;
   z-index: 15;
   background-color: rgba(0,0,0,0.7);
