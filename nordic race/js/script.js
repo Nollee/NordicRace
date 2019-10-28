@@ -1,4 +1,7 @@
 // hej //
 $(document).ready(function () {
-  $('.popup').addClass
-    });
+  $("#button-del").click(function(){
+  $(".popup").addClass("hide");
+});
+
+});

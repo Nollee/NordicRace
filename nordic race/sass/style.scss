@@ -152,7 +152,7 @@ a {
   p {
   font-size: 15px;
   padding: 15px;
-  }  
+  }
 margin-top: -20px;
 @extend %shadow;
 }
@@ -163,7 +163,7 @@ margin-top: -20px;
   border-radius: 50%;
   border: $red 25px solid;
   background-color: white;
-  margin-top: 40px;
+  margin-top: 5%;
 
 }
 
@@ -174,11 +174,11 @@ margin-top: -20px;
   @extend %center;
   left: 10%;
   right: 10%;
-  bottom: 200px;
+  bottom: 26%;
   z-index: 5;
 }
 
-.buttons{
+.arrows{
   margin: auto;
   position: absolute;
   display: flex;
@@ -196,7 +196,7 @@ width: 60px;
 height: 60px;
 }
 
-.buttons img{
+.arrows img{
   width: 90%;
   height: auto;
   @extend %center;
@@ -213,10 +213,22 @@ height: 60px;
 }
 
 .popup{
+  opacity: 100%;
   position: absolute;
   z-index: 15;
   background-color: rgba(0,0,0,0.7);
   height: 100%;
   width: 100%;
-  transition: 4s;
+    transition: 2s;
+    padding-top: 20px;
+}
+
+.popup.hide{
+  opacity: 0%;
+  transition: 1s;
+}
+
+#button-del{
+  width: 50%;
+  margin-top: -10px;
 }
