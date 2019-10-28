@@ -205,7 +205,7 @@ height: 60px;
   @extend %center;
 }
 
-.buttons img{
+.arrows img{
   width: 70%;
   height: auto;
 
@@ -234,10 +234,10 @@ height: 60px;
 .popup.hide{
   opacity: 0%;
   transition: 1s;
+  z-index: 0;
 }
 
 #button-del{
   width: 50%;
   margin-top: -10px;
 }
- 
