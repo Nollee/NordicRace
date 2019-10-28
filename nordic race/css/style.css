@@ -42,7 +42,7 @@ a { text-decoration: none; }
 
 #soilder-big svg { width: 60%; height: auto; }
 
-.chartext { border-radius: 25px; width: 80%; background-color: #E4E4E4; position: absolute; margin-top: -20px; }
+.chartext { border-radius: 25px; width: 80%; background-color: #E4E4E4; margin-top: -20px; }
 
 .chartext p { font-size: 15px; padding: 15px; }
 
