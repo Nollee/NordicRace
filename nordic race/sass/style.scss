@@ -13,16 +13,6 @@ $h-color: #CEF249;
   justify-content: center;
 }
 
-%header { 
-  height: 120px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-position: center;
-  background-size: cover;
-}
-
 %shadow {
   -webkit-box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
 -moz-box-shadow: 10px 10px 5px -11px rgba(0,0,0,0.54);
@@ -44,6 +34,7 @@ body {
   width: 100vw;
   overflow: hidden;
   position: relative;
+  font-family: "Segoe UI";
 }
 
 h1{
@@ -131,17 +122,29 @@ a {
   font-family: almaq-rough, sans-serif;
 }
 
+.soilder-text-wrapper {
+  position: relative;
+  @extend %center;
+  flex-direction: column;
+}
+
 #soilder-big {
   @extend %center;
   width: 100%;
-  height: auto;
   svg {
     width: 60%;
+    height: auto;
   }
+  z-index: 5;
 }
 
 .chartext {
-  width: 70%;
+  width: 80%;
   background-color: $white;
-  z-index: 3;
+  z-index: 2;
+  p {
+  padding: 15px;
+  }
+position: absolute;
+ 
 }
