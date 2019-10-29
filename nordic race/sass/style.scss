@@ -223,7 +223,7 @@ height: 60px;
   height: auto;
 
   flex-direction: column;
-}  
+}
 .up img{
     transform: rotate(90deg);
 }
@@ -271,6 +271,7 @@ height: 60px;
 }
 .button2 {
   @extend %center;
+  @extend %shadow;
   border: none;
   background-color: $red;
   background-image: url(../images/mud-small.png);
