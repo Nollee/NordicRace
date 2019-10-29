@@ -30,7 +30,7 @@ a { text-decoration: none; }
 
 .button, .button-sm { position: relative; border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); height: 50px; border-radius: 30px; z-index: 9; color: #480000; font-family: almaq-rough, sans-serif; }
 
-.button { width: 50%; font-size: 30px; bottom: 12%; position: absolute; }
+.button { width: 50%; font-size: 30px; margin-top: 8%; position: absolute; }
 
 .button-sm { font-size: 25px; width: 100%; }
 
