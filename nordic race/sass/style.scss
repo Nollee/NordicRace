@@ -284,6 +284,7 @@ height: 60px;
 }
 .button2 {
   @extend %center;
+  @extend %shadow;
   border: none;
   background-color: $red;
   background-image: url(../images/mud-small.png);
