@@ -15,4 +15,24 @@ $(".down").click(function(){
 
   $("#button-del").click(function(){
   $(".popup").addClass("hide");
+    countdown();
   });
+
+
+  // https://duckdev.com/blog/count-down-redirect-using-javascript/
+  var seconds = 20;
+
+  function countdown() {
+      seconds = seconds - 1;
+      if (seconds < 0) {
+          // Chnage your redirection link here
+          window.location = "index.html";
+      } else {
+          // Update remaining seconds
+          document.getElementById("countdown").innerHTML = seconds;
+          // Count down using javascript
+          window.setTimeout("countdown()", 1000);
+      }
+  }
+
+  // Run countdown function

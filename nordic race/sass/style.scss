@@ -198,6 +198,7 @@ margin-top: -20px;
   z-index: 5;
 }
 
+/* game.html */
 .arrows{
   margin: auto;
   position: absolute;
@@ -238,11 +239,14 @@ height: 60px;
   flex-direction: column;
 }
 
-
+.timer img{
+  width: 35px;
+}
 
 .timer span{
   color: white;
   font-weight: bold;
+  font-size: 18px;
 }
 
 .popup{
@@ -264,6 +268,8 @@ height: 60px;
   width: 50%;
   margin-top: -10px;
 }
+
+/* game.html slut*/
 
 .charwrap{
   margin-top: 15%;
