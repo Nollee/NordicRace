@@ -44,7 +44,7 @@ a { text-decoration: none; }
 
 #soilder-big2 { width: 100%; z-index: 5; }
 
-#soilder-big2 svg { width: 41%; height: auto; }
+#soilder-big2 svg { width: 40%; height: auto; }
 
 .chartext { border-radius: 25px; width: 80%; background-color: #E4E4E4; z-index: 2; border-radius: 25px; margin-top: 100px; text-align: center; margin-top: -20px; }
 
@@ -64,13 +64,17 @@ a { text-decoration: none; }
 
 .down img { transform: rotate(-90deg); }
 
+.timer { display: flex; justify-content: center; flex-direction: column; }
+
+.timer span { color: white; font-weight: bold; }
+
 .popup { opacity: 100%; position: absolute; z-index: 15; background-color: rgba(0, 0, 0, 0.7); height: 100%; width: 100%; transition: 2s; padding-top: 20px; }
 
 .popup.hide { display: none; }
 
 #button-del { width: 50%; margin-top: -10px; }
 
-.charwrap { margin-top: 15%; display: flex; flex-direction: row; width: 90vw; height: 45vh; background-color: rgba(255, 255, 255, 0.5); border-radius: 30px; }
+.charwrap { margin-top: 15%; display: flex; flex-direction: row; width: 80%; height: 250px; background-color: rgba(255, 255, 255, 0.5); border-radius: 30px; }
 
 .charinner { width: 45%; height: 90%; }
 
