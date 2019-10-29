@@ -62,6 +62,6 @@ a { text-decoration: none; }
 
 .popup { opacity: 100%; position: absolute; z-index: 15; background-color: rgba(0, 0, 0, 0.7); height: 100%; width: 100%; transition: 2s; padding-top: 20px; }
 
-.popup.hide { opacity: 0%; transition: 1s; z-index: 0; }
+.popup.hide { display: none; }
 
 #button-del { width: 50%; margin-top: -10px; }

@@ -232,9 +232,7 @@ height: 60px;
 }
 
 .popup.hide{
-  opacity: 0%;
-  transition: 1s;
-  z-index: 0;
+  display: none;
 }
 
 #button-del{
