@@ -145,11 +145,24 @@ a {
   }
   z-index: 5;
 }
+#soilder-big2 {
+  @extend %center;
+  width: 100%;
+  svg {
+    width: 41%;
+    height: auto;
+  }
+  z-index: 5;
+}
 
 .chartext {
   border-radius: 25px;
   width: 80%;
   background-color: $white;
+  z-index: 2;
+  border-radius: 25px;
+  margin-top: 100px;
+  text-align: center;
   p {
   font-size: 15px;
   padding: 15px;
@@ -237,4 +250,36 @@ height: 60px;
 #button-del{
   width: 50%;
   margin-top: -10px;
+}
+
+.charwrap{
+  margin-top: 15%;
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  height: 45vh;
+  background-color: rgba(255,255,255,0.5);
+  border-radius: 30px;
+}
+.charinner{
+  width: 45%;
+  height: 90%;
+}
+.spiller{
+  height: 70%;
+  width: 50%;
+}
+.button2 {
+  @extend %center;
+  border: none;
+  background-color: $red;
+  background-image: url(../images/mud-small.png);
+  margin-top: 10%;
+  width: 80%;
+  height: 50px;
+  border-radius: 30px;
+  z-index: 5;
+  font-size: 30px;
+  color: $btn-red;
+  font-family: almaq-rough, sans-serif;
 }
