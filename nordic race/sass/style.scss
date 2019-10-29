@@ -35,7 +35,7 @@ body {
   width: 100vw;
   overflow: hidden;
   position: relative;
-  font-family: "Segoe UI";
+  font-family: "Segoe UI", sans-serif;
 }
 
 h1{
@@ -101,6 +101,7 @@ h2{
 }
 
 a {
+  @extend %center;
   text-decoration: none;
 }
 
@@ -120,7 +121,8 @@ a {
 .button {
   width: 50%;
   font-size: 30px;
-  margin-top: 5%;
+  bottom: 12%;
+  position: absolute;
 }
 .button-sm {
   font-size: 25px;
@@ -170,7 +172,7 @@ a {
 margin-top: -20px;
 @extend %shadow;
 }
- 
+
 .score{
   color: $dark;
   font-size: 100px;
