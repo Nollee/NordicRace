@@ -11,13 +11,13 @@ $(".down").click(function(){
     $("#player").attr('src',"images/armNed.svg");
 })
   });
- 
 
+$(document).ready(function(){
   $("#button-del").click(function(){
   $(".popup").addClass("hide");
     countdown();
   });
-
+  });
 
   // https://duckdev.com/blog/count-down-redirect-using-javascript/
   var seconds = 20;
@@ -25,8 +25,20 @@ $(".down").click(function(){
   function countdown() {
       seconds = seconds - 1;
       if (seconds < 0) {
-          // Chnage your redirection link here
-          window.location = "index.html";
+        if (i<40) {
+          $(".loser").addClass("show");
+          $(".result").text(i);
+        }
+        else if ( (i>=40) == (i<70) ) {
+          $(".middle").addClass("show");
+          $(".result").text(i);
+
+        }
+        else if (i>=70) {
+          $(".winner").addClass("show");
+          $(".result").text(i);
+
+        }
       } else {
           // Update remaining seconds
           document.getElementById("countdown").innerHTML = seconds;
