@@ -1,7 +1,9 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-h1, h2, .warrior img, #logo, #logo-small, .button, .soilder-text-wrapper, #soilder-big, #soilder-big2, #player, .button2 { display: flex; align-items: center; justify-content: center; }
+h1, h2, .warrior img, #logo, #logo-small, .button, .button-sm, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down, .button2 { display: flex; align-items: center; justify-content: center; }
+
+.button, .button-sm, .chartext { -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
 
 /*---------------My Inheritances-------------*/
 * { margin: auto; padding: 0px; }
@@ -16,7 +18,7 @@ h2 { font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal;
 
 .warrior img { z-index: -3; width: 190px; height: 190px; }
 
-#logo-small { margin-top: 10px; width: 30%; }
+#logo-small { padding-top: 10px; width: 30%; }
 
 .splash-l { z-index: -2; position: absolute; left: 0px; height: 60vh; }
 
@@ -26,9 +28,15 @@ h2 { font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal;
 
 a { text-decoration: none; }
 
-.button { border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); margin-top: 10%; width: 50%; height: 50px; border-radius: 30px; z-index: 5; font-size: 30px; color: #480000; font-family: almaq-rough, sans-serif; }
+.button, .button-sm { position: relative; border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); height: 50px; border-radius: 30px; z-index: 9; color: #480000; font-family: almaq-rough, sans-serif; }
+
+.button { width: 50%; font-size: 30px; margin-top: 10%; }
+
+.button-sm { font-size: 25px; width: 100%; }
 
 .soilder-text-wrapper { position: relative; flex-direction: column; }
+
+.soilder-text-wrapper a { width: 50%; margin-top: -10px; }
 
 #soilder-big { width: 100%; z-index: 5; }
 
@@ -38,17 +46,29 @@ a { text-decoration: none; }
 
 #soilder-big2 svg { width: 41%; height: auto; }
 
-.chartext { width: 80%; background-color: #E4E4E4; z-index: 2; border-radius: 25px; margin-top: 100px; text-align: center; position: absolute; }
+.chartext { border-radius: 25px; width: 80%; background-color: #E4E4E4; z-index: 2; border-radius: 25px; margin-top: 100px; text-align: center; margin-top: -20px; }
 
-.chartext p { padding: 15px; }
+.chartext p { font-size: 15px; padding: 15px; }
 
-.score { width: 180px; height: 180px; border-radius: 50%; border: #c22a1f 25px solid; background-color: white; margin-top: 40px; }
+.score { color: #222625; font-size: 100px; font-family: almaq-rough, sans-serif; background-repeat: no-repeat; background-position: center; width: 170px; height: 170px; border-radius: 50%; border: #BF1B24 15px solid; background-color: white; margin-top: 40px; }
 
-#player { position: absolute; width: 80%; height: auto; left: 10%; right: 10%; bottom: 200px; z-index: 5; }
+#player { position: absolute; width: 80%; height: auto; left: 10%; right: 10%; bottom: 26%; z-index: 5; }
 
-.buttons { margin: auto; position: absolute; display: flex; flex-direction: row; justify-content: space-between; width: 100%; bottom: 50px; z-index: 4; }
+.arrows { margin: auto; position: absolute; display: flex; flex-direction: row; justify-content: space-between; width: 100%; bottom: 50px; z-index: 4; }
 
-.up, .down { border-radius: 50%; background-color: white; border: #1BBF44 8px solid; width: 60px; height: 60px; }
+.up, .down { border-radius: 50%; background-image: url(../images/mud-small.png); background-color: white; border: #1BBF44 8px solid; width: 60px; height: 60px; }
+
+.arrows img { width: 70%; height: auto; flex-direction: column; }
+
+.up img { transform: rotate(90deg); }
+
+.down img { transform: rotate(-90deg); }
+
+.popup { opacity: 100%; position: absolute; z-index: 15; background-color: rgba(0, 0, 0, 0.7); height: 100%; width: 100%; transition: 2s; padding-top: 20px; }
+
+.popup.hide { display: none; }
+
+#button-del { width: 50%; margin-top: -10px; }
 
 .charwrap { margin-top: 15%; display: flex; flex-direction: row; width: 90vw; height: 45vh; background-color: rgba(255, 255, 255, 0.5); border-radius: 30px; }
 
