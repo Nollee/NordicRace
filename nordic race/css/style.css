@@ -44,7 +44,7 @@ a { text-decoration: none; }
 
 #soilder-big2 { width: 100%; z-index: 5; }
 
-#soilder-big2 svg { width: 41%; height: auto; }
+#soilder-big2 svg { width: 40%; height: auto; }
 
 .chartext { border-radius: 25px; width: 80%; background-color: #E4E4E4; z-index: 2; border-radius: 25px; margin-top: 100px; text-align: center; margin-top: -20px; }
 
