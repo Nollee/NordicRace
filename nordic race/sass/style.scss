@@ -31,7 +31,7 @@ $dark: #222625;
 body {
   background-image: url(../images/background_3.jpg);
   background-position: center;
-  height: 100vh;
+  height: 95vh; /*notch in bottom of smartphone that takes up about 5%*/
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -120,7 +120,7 @@ a {
 .button {
   width: 50%;
   font-size: 30px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .button-sm {
   font-size: 25px;
@@ -164,13 +164,13 @@ a {
   margin-top: 100px;
   text-align: center;
   p {
-  font-size: 15px;
+  font-size: 2.2vh;
   padding: 15px;
   }
 margin-top: -20px;
 @extend %shadow;
 }
-
+ 
 .score{
   color: $dark;
   font-size: 100px;

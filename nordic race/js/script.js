@@ -11,7 +11,7 @@ $(".down").click(function(){
     $("#player").attr('src',"images/armNed.svg");
 })
   });
-
+ 
 
   $("#button-del").click(function(){
   $(".popup").addClass("hide");
