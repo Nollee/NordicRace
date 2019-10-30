@@ -1,18 +1,20 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-h1, h2, .warrior img, #logo, #logo-small, .button, .button-sm, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down, .button2 { display: flex; align-items: center; justify-content: center; }
+h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down { display: flex; align-items: center; justify-content: center; }
 
-.button, .button-sm, .chartext, .button2 { -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
+.button, .button-sm, .button2, .chartext { -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
 
 /*---------------My Inheritances-------------*/
 * { margin: auto; padding: 0px; }
 
-body { background-image: url(../images/background_3.jpg); background-position: center; height: 95vh; /*notch in bottom of smartphone that takes up about 5%*/ width: 100vw; overflow: hidden; position: relative; font-family: "Segoe UI"; }
+body { background-image: url(../images/background.jpg); background-position: center; height: 95vh; /*notch in bottom of smartphone that takes up about 5%*/ width: 100vw; overflow: hidden; position: relative; font-family: "Segoe UI", sans-serif; }
 
-h1 { font-size: 37px; font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal; color: #CEF249; }
+h1, h2 { font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal; color: #CEF249; }
 
-h2 { font-family: almaq-rough, sans-serif; font-weight: 400; font-style: normal; color: #CEF249; font-size: 50px; }
+h2 { font-size: 50px; }
+
+h1 { font-size: 37px; }
 
 a { text-decoration: none; }
 
@@ -28,9 +30,11 @@ a { text-decoration: none; }
 
 #dirt-small, #dirt-big { width: 100%; position: absolute; bottom: 0px; max-height: 40%; z-index: -1; }
 
-.button, .button-sm { position: relative; border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); height: 50px; border-radius: 30px; z-index: 9; color: #480000; font-family: almaq-rough, sans-serif; }
+a { text-decoration: none; }
 
-.button { width: 50%; font-size: 30px; margin-top: 5%; }
+.button, .button-sm, .button2 { position: relative; border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); height: 50px; border-radius: 30px; z-index: 9; color: #480000; font-family: almaq-rough, sans-serif; }
+
+.button { width: 50%; font-size: 30px; margin-top: 8%; position: absolute; }
 
 .button-sm { font-size: 25px; width: 100%; }
 
@@ -38,11 +42,9 @@ a { text-decoration: none; }
 
 .soilder-text-wrapper a { width: 50%; margin-top: -10px; }
 
-#soilder-big { width: 100%; z-index: 5; }
+#soilder-big, #soilder-big2 { width: 100%; z-index: 5; }
 
 #soilder-big svg { width: 60%; height: auto; }
-
-#soilder-big2 { width: 100%; z-index: 5; }
 
 #soilder-big2 svg { width: 40%; height: auto; }
 
@@ -88,7 +90,7 @@ a { text-decoration: none; }
 
 .spiller { height: 70%; width: 50%; }
 
-.button2 { border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); margin-top: 10%; width: 80%; height: 50px; border-radius: 30px; z-index: 5; font-size: 30px; color: #480000; font-family: almaq-rough, sans-serif; }
+.button2 { margin-top: 10%; width: 80%; border-radius: 30px; font-size: 30px; }
 
 /* Map */
 #mapbody { background: hidden; }
