@@ -48,6 +48,13 @@ h1 {
 font-size: 37px;
 
 }
+
+
+a {
+  text-decoration: none;
+}
+
+
 .warrior{
   width: 100%;
 }
@@ -300,4 +307,29 @@ height: 60px;
   width: 80%;
   border-radius: 30px;
   font-size: 30px;
+}
+
+/* Map */
+
+#mapbody{
+  background: hidden;
+}
+#map{
+  position:absolute;
+  top:0;
+  bottom:0;
+  width:100%;
+}
+
+#marker, #marker2, #marker3 {
+background-image: url(../images/soilder.png);
+background-size: cover;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+cursor: pointer;
+}
+
+.mapboxgl-popup {
+max-width: 200px;
 }

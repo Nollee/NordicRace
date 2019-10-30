@@ -16,6 +16,8 @@ h2 { font-size: 50px; }
 
 h1 { font-size: 37px; }
 
+a { text-decoration: none; }
+
 .warrior { width: 100%; }
 
 .warrior img { z-index: -3; width: 190px; height: 190px; }
@@ -89,3 +91,12 @@ a { text-decoration: none; }
 .spiller { height: 70%; width: 50%; }
 
 .button2 { margin-top: 10%; width: 80%; border-radius: 30px; font-size: 30px; }
+
+/* Map */
+#mapbody { background: hidden; }
+
+#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+
+#marker, #marker2, #marker3 { background-image: url(../images/soilder.png); background-size: cover; width: 60px; height: 60px; border-radius: 50%; cursor: pointer; }
+
+.mapboxgl-popup { max-width: 200px; }
