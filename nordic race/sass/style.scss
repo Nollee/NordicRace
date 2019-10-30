@@ -24,6 +24,10 @@ $dark: #222625;
   padding: 0px;
 }
 
+span{
+  margin: auto;
+}
+
 body {
   background-image: url(../images/background.jpg);
   background-position: center;
@@ -324,9 +328,8 @@ height: 60px;
 #marker, #marker2, #marker3 {
 background-image: url(../images/soilder.png);
 background-size: cover;
-width: 60px;
-height: 60px;
-border-radius: 50%;
+width: 45px;
+height: 55px;
 cursor: pointer;
 }
 
