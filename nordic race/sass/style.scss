@@ -20,11 +20,11 @@ $dark: #222625;
 }
 /*---------------My Inheritances-------------*/
 *{
-  margin: auto;
+  margin: 0px;
   padding: 0px;
 }
 
-span{
+div, img, span {
   margin: auto;
 }
 
@@ -124,7 +124,7 @@ a {
 .button {
   width: 50%;
   font-size: 30px;
-  margin-top: 8%;
+  margin-top: 10%;
   position: absolute;
 }
 .button-sm {
@@ -313,10 +313,113 @@ height: 60px;
   font-size: 30px;
 }
 
+/*outro-------------------------------*/
+#outro-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  width: 100%;
+  height: 80%;
+  color: $white;
+  text-align: left;
+  margin: 0px;
+  h1 {
+    justify-content: flex-start;
+  }
+}
+
+  #outro1, #outro2 {
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    p b {
+      color: $h-color;
+      font-size: 16px;
+    }
+    }
+
+    .SoMe-wrapper {
+      margin: 0px;
+      margin-top: 15px;
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      img {
+        margin: 0px;
+      width: 95px;
+      height: 29px;
+    }
+}
+  #outro2 {
+    p b {
+      color: $h-color;
+      font-size: 20px;
+      font-family: almaq-rough, sans-serif;
+    }
+  }
+.game-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+  p b {
+    color: $white !important;
+  }
+  .button {
+    width: 80px;
+    height: 40px;
+    position: relative;
+    margin: 0px;
+    margin-left: 10px;
+  }
+}
+
+.return-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0px;
+  margin-top: 15px;
+  img {
+    margin-right: 5px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+#soda {
+  position: fixed;
+  right: 0px;
+  height: 80vh;
+}
+/*END----------------------*/
+
+
 /* Map */
 
 #mapbody{
   background: hidden;
+  img {
+    position: relative;
+    @extend %center;
+    z-index: 9;
+  }
+}
+.return-arrow {
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  margin: 0px;
+  width: 25px;
+  height: 25px;
+  img {
+    width: 25px;
+    height: 25px;
+  }
 }
 #map{
   position:absolute;

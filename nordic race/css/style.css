@@ -1,12 +1,14 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down { display: flex; align-items: center; justify-content: center; }
+h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down, #mapbody img { display: flex; align-items: center; justify-content: center; }
 
 .button, .button-sm, .button2, .chartext { -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
 
 /*---------------My Inheritances-------------*/
-* { margin: auto; padding: 0px; }
+* { margin: 0px; padding: 0px; }
+
+div, img { margin: auto; }
 
 span { margin: auto; }
 
@@ -36,7 +38,7 @@ a { text-decoration: none; }
 
 .button, .button-sm, .button2 { position: relative; border: none; background-color: #BF1B24; background-image: url(../images/mud-small.png); height: 50px; border-radius: 30px; z-index: 9; color: #480000; font-family: almaq-rough, sans-serif; }
 
-.button { width: 50%; font-size: 30px; margin-top: 8%; position: absolute; }
+.button { width: 50%; font-size: 30px; margin-top: 10%; position: absolute; }
 
 .button-sm { font-size: 25px; width: 100%; }
 
@@ -94,8 +96,42 @@ a { text-decoration: none; }
 
 .button2 { margin-top: 10%; width: 80%; border-radius: 30px; font-size: 30px; }
 
+/*outro-------------------------------*/
+#outro-wrapper { display: flex; flex-direction: column; justify-content: space-around; align-items: baseline; width: 100%; height: 80%; color: #E4E4E4; text-align: left; margin: 0px; }
+
+#outro-wrapper h1 { justify-content: flex-start; }
+
+#outro1, #outro2 { margin: 15px; display: flex; flex-direction: column; width: 65%; }
+
+#outro1 p b, #outro2 p b { color: #CEF249; font-size: 16px; }
+
+.SoMe-wrapper { margin: 0px; margin-top: 15px; width: 200px; display: flex; justify-content: space-between; }
+
+.SoMe-wrapper img { margin: 0px; width: 95px; height: 29px; }
+
+#outro2 p b { color: #CEF249; font-size: 20px; font-family: almaq-rough, sans-serif; }
+
+.game-wrapper { display: flex; flex-direction: row; justify-content: flex-start; align-items: center; margin-top: 15px; width: 100%; }
+
+.game-wrapper p b { color: #E4E4E4 !important; }
+
+.game-wrapper .button { width: 80px; height: 40px; position: relative; margin: 0px; margin-left: 10px; }
+
+.return-wrapper { display: flex; flex-direction: row; align-items: center; margin: 0px; margin-top: 15px; }
+
+.return-wrapper img { margin-right: 5px; width: 25px; height: 25px; }
+
+#soda { position: fixed; right: 0px; height: 80vh; }
+
+/*END----------------------*/
 /* Map */
 #mapbody { background: hidden; }
+
+#mapbody img { position: relative; z-index: 9; }
+
+.return-arrow { position: absolute; left: 30px; top: 30px; margin: 0px; width: 25px; height: 25px; }
+
+.return-arrow img { width: 25px; height: 25px; }
 
 #map { position: absolute; top: 0; bottom: 0; width: 100%; }
 
