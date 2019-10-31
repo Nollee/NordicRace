@@ -141,12 +141,12 @@ a {
   }
 }
 
-.soilder-big, #soilder-big2 {
+#soilder-big, #soilder-big2 {
   @extend %center;
   width: 100%;
   z-index: 5;
 }
-.soilder-big {
+#soilder-big { 
   svg {
     width: 60%;
     height: auto;

@@ -1,7 +1,7 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, .soilder-big, #soilder-big2, .score, #player, .up, .down, #mapbody img { display: flex; align-items: center; justify-content: center; }
+h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down, #mapbody img { display: flex; align-items: center; justify-content: center; }
 
 .button, .button-sm, .button2, .chartext { -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
 
@@ -44,9 +44,9 @@ a { text-decoration: none; }
 
 .soilder-text-wrapper a { width: 50%; margin-top: -10px; }
 
-.soilder-big, #soilder-big2 { width: 100%; z-index: 5; }
+#soilder-big, #soilder-big2 { width: 100%; z-index: 5; }
 
-.soilder-big svg { width: 60%; height: auto; }
+#soilder-big svg { width: 60%; height: auto; }
 
 #soilder-big2 svg { width: 40%; height: auto; }
 
