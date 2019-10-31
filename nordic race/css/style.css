@@ -1,16 +1,14 @@
 /*---------------My variables*---------------*/
 /*---------------My variables*---------------*/
 /*---------------My Inheritances-------------*/
-h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, #soilder-big, #soilder-big2, .score, #player, .up, .down, #mapbody img { display: flex; align-items: center; justify-content: center; }
+h1, h2, .warrior img, #logo, #logo-small, a, .button, .button-sm, .button2, .soilder-text-wrapper, .soilder-big, #soilder-big2, .score, #player, .up, .down, #mapbody img { display: flex; align-items: center; justify-content: center; }
 
 .button, .button-sm, .button2, .chartext { -webkit-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); -moz-box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16); }
 
 /*---------------My Inheritances-------------*/
 * { margin: 0px; padding: 0px; }
 
-div, img { margin: auto; }
-
-span { margin: auto; }
+div, img, span { margin: auto; }
 
 body { background-image: url(../images/background.jpg); background-position: center; height: 95vh; /*notch in bottom of smartphone that takes up about 5%*/ width: 100vw; overflow: hidden; position: relative; font-family: "Segoe UI", sans-serif; }
 
@@ -46,9 +44,9 @@ a { text-decoration: none; }
 
 .soilder-text-wrapper a { width: 50%; margin-top: -10px; }
 
-#soilder-big, #soilder-big2 { width: 100%; z-index: 5; }
+.soilder-big, #soilder-big2 { width: 100%; z-index: 5; }
 
-#soilder-big svg { width: 60%; height: auto; }
+.soilder-big svg { width: 60%; height: auto; }
 
 #soilder-big2 svg { width: 40%; height: auto; }
 
@@ -87,7 +85,7 @@ a { text-decoration: none; }
 
 .show { display: flex; }
 
-/* game.html slut*/
+/*END----------------------*/
 .charwrap { margin-top: 15%; display: flex; flex-direction: row; width: 80%; height: 250px; background-color: rgba(255, 255, 255, 0.5); border-radius: 30px; }
 
 .charinner { width: 45%; height: 90%; }
@@ -125,8 +123,6 @@ a { text-decoration: none; }
 
 /*END----------------------*/
 /* Map */
-#mapbody { background: hidden; }
-
 #mapbody img { position: relative; z-index: 9; }
 
 .return-arrow { position: absolute; left: 30px; top: 30px; margin: 0px; width: 25px; height: 25px; }
@@ -138,3 +134,5 @@ a { text-decoration: none; }
 #marker, #marker2, #marker3 { background-image: url(../images/soilder.png); background-size: cover; width: 45px; height: 55px; cursor: pointer; }
 
 .mapboxgl-popup { max-width: 200px; }
+
+/*END----------------------*/
